@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" href="/stylesheets/indexStyle.css">
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><i class="material-icons left">check</i>To-Do List</a>
+            <a href="/" class="sidenav-trigger"><i class="material-icons left">menu</i></a>
+            <ul class="right">
+                <li><a href="/homepage"><i class="material-icons left">home</i> Home</a></li>
+                <li><a href="/"><i class="material-icons left">list</i> List</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Your List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Subject</th>
+                    <th>Priority</th>
+                    <th>Edit/Info</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Vacuum house</td>
+                    <td>Cleaning</td>
+                    <td>1</td>
+                    <td><a class="btn waves-effect pink" href="/info"><i
+                                class="material-icons right">edit</i>Edit/Info</a> <a class="btn waves-effect red"
+                            href="/"><i class="material-icons right">delete</i>Delete</a></td>
+                </tr>
+
+                <tr>
+                    <td>Go grocery shopping</td>
+                    <td>Errands</td>
+                    <td>2</td>
+                    <td><a class="btn waves-effect pink" href="/info"><i
+                                class="material-icons right">edit</i>Edit/Info</a> <a class="btn waves-effect red"
+                            href="/"><i class="material-icons right">delete</i>Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Add an item</h2>
+
+        <form>
+            <label>Item name:</label>
+            <input type="text" data-length=50><br><br>
+            <label>Subject:</label>
+            <input type="text"><br><br>
+            <label>Priority (1-10):</label><br><br>
+            <select type="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br><br>
+            <a class="btn waves-effect pink" type="submit" href="/"><i
+                    class="material-icons right">send</i>Submit</a>
+        </form>
+        <br>
+    </div>
+
+    <div class="modal" id="modal1">
+        <h1>Hi! I am a modal!</h1>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="/scripts/materializeAutoInit.js"></script>
+</body>
+
+</html>

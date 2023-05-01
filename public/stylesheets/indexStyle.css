@@ -1,0 +1,25 @@
+form {
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    color: black;
+}
+
+form:focus-within {
+    border-color: rgb(224, 159, 188);
+}
+
+tr:hover {
+    background-color: rgb(224, 159, 188);
+}
+
+body {
+    background-color: lightpink;
+}
+
+img {
+    border: solid 3px rgb(219, 131, 170);
+}

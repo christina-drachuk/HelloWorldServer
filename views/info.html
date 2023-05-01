@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit/Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" href="/stylesheets/indexStyle.css">
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><i class="material-icons left">check</i>To-Do List</a>
+            <a href="/" class="sidenav-trigger"><i class="material-icons left">menu</i></a>
+            <ul class="right">
+                <li><a href="/homepage"><i class="material-icons left">home</i> Home</a></li>
+                <li><a href="/"><i class="material-icons left">list</i> List</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Vacuum</h1>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td><strong>Priority:</strong></td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Subject:</strong></td>
+                    <td>Cleaning</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Edit this item</h2>
+        <form>
+            <label>New item name:</label>
+            <input type="text" data-length=50><br><br>
+            <label>Item subject:</label>
+            <input type="text"><br><br>
+            <label>New priority (1-10):</label><br><br>
+            <select type="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br><br>
+            <a class="btn waves-effect pink" type="submit" href="/info"><i class="material-icons right">send</i>Submit</a>
+          </form>
+    </div>
+
+    <script src="/scripts/materializeAutoInit.js"></script>
+</body>
+
+</html>
