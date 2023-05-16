@@ -1,7 +1,7 @@
 // set up the server
 const express = require("express")
 const app = express()
-const port = 3000
+const port = 3306
 const logger = require("morgan")
 
 // middleware
